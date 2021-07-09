@@ -19,6 +19,89 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <!-- Menu de navigation -->
+  <nav>
+    <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="evenements.html">Événements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adhesion.html">Adhérer/Bénévoler</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Contenu principal de la page -->
+  <main class="container p-3">
+    <h2 class="text-center">NOUS CONTACTER</h2>
+    <p class="text-center">Pour toutes questions ou demande de renseignements, veuillez remplir le 
+      formulaire ci-dessous :
+    </p>
+    <!-- Formulaire -->
+    <form class="row m-3 g-3 p-3">
+      <div class="col-6 form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Mme">
+        <label class="form-check-label" for="Mme">
+          Madame
+        </label>
+      </div>
+      <div class="col-6 form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Mr" checked>
+        <label class="form-check-label" for="Mr">
+          Monsieur
+        </label>
+      </div>
+      <div class="col-6">
+        <label for="prenom" class="form-label">Votre prénom :</label>
+        <input type="text" class="form-control" id="prenom" placeholder="ex: Jean">
+      </div>
+      <div class="col-6">
+        <label for="nom" class="form-label">Votre nom :</label>
+        <input type="text" class="form-control" id="nom" placeholder="ex: Dupont">
+      </div>
+      <div class="col-6">
+        <label for="Email" class="form-label">Votre E-mail :</label>
+        <input type="email" class="form-control" id="Email" placeholder="ex: abcd@example.fr" required>
+      </div>
+      <div class="col-6">
+        <label for="tel" class="form-label">Votre numéro de téléphone :</label>
+        <input type="tel" class="form-control" id="tel" placeholder="ex: 01.02.03.04.05">
+      </div>
+      <div class="col-12">
+        <label for="sujet" class="form-label">Sujet :</label>
+        <input type="text" class="form-control" id="sujet" placeholder="ex: Demande d'adhesion">
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Votre message :</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="..."></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-outline-success">Envoyer</button>
+      </div>
+    </form>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="reseaux container text-center">
+      Suivez-nous sur nos réseaux :
+      <a href="#" class="p-3">
+        <img src="img/facebook.png" alt="Logo facebook" width="30px">
+      </a>
+      <a href="#" class="p-3">
+        <img src="img/instagram.png" alt="Logo instagram" width="30px">
+      </a>
+      <a href="#" class="p-3">
+        <img src="img/twitter.png" alt="Logo twitter" width="30px">
+      </a>
+    </div>
+    <div class="copy container text-center">
+      &copy; Caroline Calimé - 2021 - Tous droits réservés
+    </div>
+  </footer>
 </body>
 </html>
