@@ -18,19 +18,31 @@
         crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="p-3">
   <header>
-    <img src="img/Logo.png" width="50px" alt="Logo de l'association - Re-Cyclons">
-    <div>
-      <h1>Re-Cyclons</h1>
-      <p>"Pour un monde propre et solidaire"</p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-2 text-center">
+          <img src="img/Logo.png" width="80rem" alt="Logo de l'association - Re-Cyclons">
+        </div>
+        <div class="col-md-6 text-center">
+          <h1><strong>RE-CYCLONS</strong></h1>
+          <p>"Pour un monde propre et solidaire"</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="img/tricycle.png" width="30rem" alt="">
+          <img src="img/velo.png" width="50rem" alt="">
+          <img src="img/bicycle.png" width="70rem" alt="">
+          <img src="img/bicycle-co.png" width="70rem" alt="">
+        </div>
+      </div>
     </div>
   </header>
   <!-- Menu de navigation -->
   <nav>
     <ul class="nav nav-tabs nav-justified">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Accueil</a>
+        <a class="nav-link active bg-secondary text-white" href="#">Accueil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="evenements.html">Événements</a>
@@ -43,19 +55,6 @@
        </li>
     </ul>
   </nav>
-  <!-- Slogan -->
-  <div class="card text-center">
-    <div class="card-header text-muted">
-      Slogan
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">" POUR UN MONDE PROPRE ET SOLIDAIRE ! "</h5>
-      <p class="card-text">RE-CYCLONS</p>
-    </div>
-    <div class="card-footer text-muted">
-      - Jules et Arthur -
-    </div>
-  </div>
   <!-- Contenu principal de la page -->
   <main>
     <h2>L'association</h2>
@@ -85,159 +84,152 @@
         Notre bureau ainsi que l'atelier se trouve dans le centre de <strong>St Sulpice La Pointe</strong>, 
         dans le département du Tarn. <br>
         Notre adresse exacte est la suivante: 47 rue villelongue 81370 St Sulpice La Pointe. <br>
-        <img class="plan" src="img/index/plan.jpg" alt=""> <br>
+        <img class="plan card p-2" src="img/index/plan.jpg" alt=""> <br>
         Mais vous pouvez également nous retrouver une fois par mois sur la place du marché ou lors de
-        nos différents évènements pour en savoir plus <a href="evenements.html">cliquez ici</a>.
+        nos différents évènements pour en savoir plus <a class="link-success" href="evenements.html">cliquez ici</a>.
       </p>
     </section>
+    <h2>Les acteurs</h2>
     <section class="membres">
       <h3>Les bénévoles</h3>
       <p>
         En janvier 2021, l'association était composé d'une équipe de <strong>8 personnes</strong> :
       </p>
         <!-- Bénévoles sous forme de cards -->
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/jules.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Jules Vernadeau</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Co-Président</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis septembre 2018</small>
-              </div>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col card m-2 pt-2">
+            <img src="img/index/jules.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jules Vernadeau</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Co-Président - 32 ans</h6>
+                Kiné de profession et passionné depuis toujours, je suis convaincu des bienfaits
+                du vélo pour le corps et l'esprit. Il s'agit d'un moyen de transport mais également
+                un moyen de s'évader et de profiter de la nature tout en la respectant au maximum.
+                Citez moi un aspect négatif à la pratique du vélo ?
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis septembre 2018</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/arthur.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Arthur Compagnon</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Co-Président</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis septembre 2018</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/arthur.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Arthur Compagnon</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Co-Président - 30 ans</h6>
+                Je suis tombé dans la marmite quand j'étais petit, avec un grand-père et un père cyclistes
+                qui ont créé le magasin de cycle du village, je ne pouvais pas déroger à la passion 
+                familiale pour le vélo. Je n'en ai pas fait ma profession, car j'ai une autre passion
+                qui est le corps humain d'où mon métier d'ostéopathe, mais le vélo fait parti de ma 
+                vie et de mon quotidien.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis septembre 2018</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/raymond.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Raymond Lauzier</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Trésorier</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis décembre 2018</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/raymond.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Raymond Lauzier</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Trésorier - 55 ans</h6>
+                Je connais Jules et Arthur depuis qu'ils sont gamins. Je suis un peu leur papa du vélo.
+                Je les ai vu bricoler et faire des expériences avec de vieilles bicyclettes récupérées par ci par là. 
+                Ils venaient me demander des conseils et m'emprunter des outils, moi-même étant un 
+                bricoleur de vélo. Alors quand ils ont décidé de créer cette association, je n'ai pas
+                hésité à me joindre à eux. 
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis décembre 2018</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/pierre.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pierre Bonenfant</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Secrétaire</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis juin 2019</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/pierre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pierre Bonenfant</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Secrétaire - 28 ans</h6>
+                Je suis professeur de sport dans un collège. Je pratique le vtt depuis l'âge de 14 ans 
+                et je fais des compétitions depuis quelques années. J'aime l'adrénaline de ce sport qui
+                permet d'évacuer la pression du quotidien tout en respectant l'environnement.  
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis juin 2019</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/julie.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Julie Coulombe</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Responsable du site web</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis juin 2019</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/julie.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Julie Coulombe</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Responsable du site web - 25 ans</h6>
+                Je suis une fille plutôt citadine et j'ai donc beaucoup emprunté les vélos de la ville.
+                J'aime énormément ce sentiment de liberté et de légèreté que procure ce moyen de locomotion.
+                Aujourd'hui, je n'habite plus à la ville mais mon amour pour les deux roues est resté
+                intact sauf que maintenant, je possède mon vélo personnel !
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis juin 2019</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/virginie.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Virginie Berthiaume</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Responsable communication</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis septembre 2019</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/virginie.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Virginie Berthiaume</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Responsable communication - 35 ans</h6>
+                J'ai appris à faire du vélo assez tardivement mais depuis je me régale ! Dès que j'en
+                ai l'occasion, j'embarque mon casque, mon vélo et parfois même ma petite famille et je 
+                parcours les kms sans même m'en rendre compte. Un vrai bonheur !
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis septembre 2019</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/stephane.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Stéphane Gadbois</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Co-Responsable atelier</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis janvier 2020</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/stephane.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stéphane Gadbois</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Co-Responsable atelier - 32 ans</h6>
+                " Rien ne se perd, tout se crée, tout se transforme." Je répare des vélos depuis que 
+                je suis môme et je ne laisserai jamais passer pour obsolète ce qui mérite une seconde vie.
+                J'ai fait de ma passion mon métier et je vis donc vélo au quotidien. J'ai également
+                à coeur de transmettre les trucs et astuces qui facilitent l’entretien et la réparation d’un vélo.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis janvier 2020</small>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/index/coralie.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Coralie Duhamel</h5>
-                <p class="card-text">
-                  <h6 class="text-muted">Co-Responsable atelier</h6>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui exercitationem blanditiis 
-                  expedita minima cumque rem quisquam illum accusantium a, molestiae ullam odit maiores 
-                  placeat aliquid. Eligendi neque tempore cum inventore.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Membre depuis septembre 2020</small>
-              </div>
+          <div class="col card m-2 pt-2">
+            <img src="img/index/coralie.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coralie Duhamel</h5>
+              <p class="card-text">
+                <h6 class="text-muted">Co-Responsable atelier - 29 ans</h6>
+                Lorsque je partais en vacances avec mes parents, c'était à vélo ! Nous avons parcouru
+                ensemble de nombreux pays et je continue en solitaire aujourd'hui. Ces voyages à vélo 
+                permettent d'apprendre à réparer soi-même et souvent avec peu de matériel et les moyens 
+                du bord. Je peux vous dire que les vélos n'ont que peu de secret pour moi !
+              </p>
             </div>
+            <div class="card-footer">
+              <small class="text-muted">Membre depuis septembre 2020</small>
+            </div>  
           </div>
         </div>
         <!-- Fin cards bénévoles -->
         <p>
           Si vous êtes également un passionné du deux roues et que vous souhaitez faire parti de l'équipe 
-          des bénévoles, <a href="adhesion.html">cliquez-ici</a> pour plus d'informations. Et à bientôt ! 
+          des bénévoles, <a class="link-success" href="adhesion.html">cliquez-ici</a> pour plus d'informations. Et à bientôt ! 
         </p>
       <h3>Les adhérents</h3>
       <p>
@@ -245,7 +237,7 @@
         majoritairement de la commune ou de communes voisines, telles que Bessières, Rabastens, St Jean de Rives,
         Giroussens, etc... <br>
         Si vous avez envie de rejoindre l'association et participer aux différentes activités, 
-        <a href="adhesion.html">cliquez-ici</a> pour connaître la marche à suivre.
+        <a class="link-success" href="adhesion.html">cliquez-ici</a> pour connaître la marche à suivre.
       </p>
     </section>
   </main>
