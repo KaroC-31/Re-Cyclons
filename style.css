@@ -7,6 +7,9 @@ body {
 
 h2 {
   text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(91,138,114);
 }
 
 h3::first-letter {
@@ -35,13 +38,16 @@ a.active {
 
 /* Style pour index.html */
 
-
-/* Style pour evenements.html */
-
 .card {
   width: 28rem;
   border-radius: 20px;
   border: 2px solid rgb(91,138,114);
+}
+
+/* Style pour evenements.html */
+
+.carousel-item {
+  text-align: center;
 }
 
 .card-img-top {
@@ -53,6 +59,11 @@ a.active {
   list-style: circle;
 }
 
+.visually-hidden {
+  color: black;
+  font-weight: bold;
+}
+
 /* Style pour contact.html */
 
 form {
@@ -61,4 +72,9 @@ form {
   border-radius: 20px;
 }
 
+/* Style pour le footer */
 
+footer {
+  background: rgb(91,138,114);
+  color: rgb(191, 203, 168);
+}
