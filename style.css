@@ -1,9 +1,78 @@
+@media screen and (max-width: 767px) {
+  .icones {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .fond {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) { 
+  h1 {
+    font-size: 2rem;
+  }
+  .benev {
+  width: 18rem;
+  }
+ }
+
+@media (min-width: 768px) { 
+  .top {
+    height: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .icone1 {
+    width: 2rem;
+  }
+  .icone {
+    width: 4rem;
+  }
+  .benev {
+    width: 24rem;
+  }
+  .menu {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+ }
+
+@media (min-width: 992px) { 
+  h1 {
+    font-size: 4rem;
+  }
+ }
+
+@media (min-width: 1200px) { 
+  h1 {
+    font-size: 5rem;
+  }
+  .benev {
+    width: 32rem;
+  }
+ }
+
 /* Style général du site */
 
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(191, 203, 168, 0.363);
   }
+
+.top {
+  background: rgb(91,138,114);
+  align-items: center;
+}
+
+.tete {
+  align-items: center;
+}
 
 h2 {
   text-decoration: underline;
@@ -16,8 +85,16 @@ h3::first-letter {
   text-decoration: underline rgb(91,138,114);
 }
 
+.card {
+  border-radius: 20px;
+  border: 2px solid rgb(91,138,114);
+}
+
 /* Style barre de navigation */
- 
+.menu {
+  height: 1.5rem;
+}
+
 .nav {
   background: rgb(91,138,114);
 }
@@ -36,15 +113,13 @@ a.active {
   font-style: italic;
 }
 
-/* Style pour index.html */
+/* Style pour index.html et evenements.html */
 
-.card {
-  width: 28rem;
+.fond {
+  background: rgba(91, 138, 114, 0.678);
   border-radius: 20px;
   border: 2px solid rgb(91,138,114);
 }
-
-/* Style pour evenements.html */
 
 .carousel-item {
   text-align: center;
@@ -57,11 +132,6 @@ a.active {
 
 .atelier {
   list-style: circle;
-}
-
-.visually-hidden {
-  color: black;
-  font-weight: bold;
 }
 
 /* Style pour contact.html */
